@@ -1,1 +1,430 @@
+:root {
+    --main-bg-color: #FFFFFF;
+    --main-bg-color-rgba: rgba(0, 0, 0, .55);
+    --nav-bg-color-rgba: rgba(100, 150, 255, .25);
+    --main-text-color: white;
+    --background-odd: rgba(255,255,255,.25);
+    --background-even: #006994;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Clarkson", Verdana, sans-serif;
+}
+
+main,
+section, 
+article,  
+aside, 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+nav,
+footer {
+    padding: 1%;
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+html {
+  
+}
+
+nav {
+    text-align: center;
+    width: 50%;
+    max-width: 80%;
+    display: inline-block;
+}
+
+footer {
+    text-align: center;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    display: inline;
+}
+
+header {
+    width: 100%;
+    max-width: 100%;
+    padding: 5%;
+    display: inline-block;
+}
+
+/* nav styling*/
+nav a:link {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: blanchedalmond;
+    background-color: rgb(0, 150, 240);
+}
+
+nav a {
+    display: inline-block;
+    padding: 1%;
+    width: 20%;
+}
+
+nav {
+    border: thin solid white;
+    text-align: center;
+
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+main {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* general syling */
+a:hover {
+    background-color: var(--main-bg-color-rgba);
+    color: blanchedalmond;
+}
+
+nav:hover a {
+    transform: rotateY(360deg);
+}
+
+footer a, main a {
+    color: rgba(75, 175, 240, .99);
+}
+cite {
+    font-size: xx-small;
+}
+
+figure {
+    text-align: center;
+    width: 80%;
+    margin-top: 1em;
+}
+
+figcaption {
+    padding-bottom: .5em;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    text-indent: 3em;
+    padding-bottom: 1em;
+}
+
+/* section {
+    overflow: auto;
+}
+*/
+
+ul li {
+    margin: 1em;
+}
+
+/* grid layout for index */
+header {
+    display: grid;
+    grid-template-areas: 
+    "header nav";
+    grid-template-columns: 25% 75%;
+}
+
+.logo {
+    grid-area: header;
+}
+
+.top-nav {
+    grid-area: nav;
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+        "banner banner banner"
+        "page-heading page-heading page-heading"
+        "section-one section-two section-three" 
+        "section-four section-four section-four";
+    grid-template-columns: 25% 50% 25%;
+}
+
+.home-banner {
+    grid-area: banner;
+    padding: 15% 5%;
+}
+
+.home-banner h1, .home-banner h3 {
+    color: #ffffff;
+    text-align: center;
+}
+
+.home-banner h1 {
+    font-size: 3rem;
+}
+
+
+main h1:first-child {
+    grid-area: page-heading;
+}
+
+.spread-kindness {
+    grid-area: section-one;
+    padding-bottom: 0;
+    margin-bottom: 1em;
+}
+
+.kindness-paragraph {
+    grid-area: section-two;
+    padding: 0 10%;
+}
+.kindness-examples {
+    grid-area: section-three;
+}
+
+.compliment-table {
+    grid-area: section-four;
+    margin-bottom: 1em;
+}
+
+main.details {
+    display: grid;
+    grid-template-areas: 
+        "page-heading page-heading"
+        "section-one section-two"
+        "section-three section-four"
+        "section-five section-six"
+        "section-seven section-eight";
+    grid-template-columns: auto auto;
+    row-gap: 1em;
+}
+.rosa-parks-image {
+    grid-area: section-one;
+}
+
+.rosa-parks-text {
+    grid-area: section-two; 
+}
+
+.gandhi-image {
+    grid-area: section-four;
+}
+
+.gandhi-text {
+    grid-area: section-three;
+}
+
+.mother-teresa-image {
+    grid-area: section-five;
+}
+
+.mother-teresa-text {
+    grid-area: section-six;
+}
+
+.ellen-degeneres-image {
+    grid-area: section-eight;
+}
+
+.ellen-degeneres-text {
+    grid-area: section-seven;
+}
+
+/* form styling */
+
+form {
+    background-color: var(--main-bg-color-rgba);
+    border: thin white groove;
+    clear: both;
+    max-width: 100%;
+    margin: auto;
+    padding: 5%;
+    font-size: large;
+}
+
+form p {
+    text-indent: 0;
+}
+
+fieldset {
+    padding: 5%;
+    border: none;
+}
+
+legend {
+    margin-top: 1%;
+}
+
+label {
+    display: block;
+}
+
+.radio label,
+.checkbox label {
+    display: inline;
+}
+
+.radio input,
+.checkbox input {
+    width: initial;
+}
+
+.radio legend,
+.checkbox legend,
+.contact legend, 
+.textarea legend {
+    padding-top: 1.5em;
+}
+
+input {
+    width: 90%;
+}
+
+textarea {
+    width: 100%;
+}
+
+select {   
+    width: 100%;
+}
+
+input[type="text"] {
+    padding: 1em;
+}
+
+input[type="email"] {
+    padding: 1em;
+}
+
+
+select {
+    padding: 1em;
+}
+
+input[type="submit"] {
+    background: rgb(48, 77, 141);
+    color: whitesmoke;
+    font-size: large;
+    padding: 2%;
+    width: 100%;  
+}
+
+input[type="submit"]:hover {
+    background: rgb(15, 36, 82);
+}
+
+/* form grid layout */
+
+.form main {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+.form main:first-child {
+    grid-column: 1 / span 2;
+}
+
+.form .actual-form {
+    grid-column: 1 / span 2;
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.form .form-feedback {
+    grid-column: 2;
+}
+
+.form h2 {
+    padding-top: 10%;
+    text-align: center;
+}
+
+/* table styling */
+table {
+    border: medium solid white;
+    border-collapse: collapse;
+    max-width: 100%;
+    margin: auto;
+}
+
+td,
+th {
+    border: thin solid white;
+    padding: .5em;
+}
+
+tr:nth-child(odd) {
+
+}
+
+tr:nth-child(even) {
+}
+
+tr:hover {
+    background-color: #5e5e5e;
+  }
+caption {
+    font-weight: bold;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+
+
+/* css classes */
+.header-img {
+    width: 80%;
+    height: 20em;
+    background: url(../images/banner-image.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color:rgba(255, 255, 255, .10);
+    margin: 0 auto;
+}
+
+.home-banner {
+    background: url(../images/header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    width:90%;
+    max-width: 1em;
+}
+.rounded {
+    border-radius: 2%;
+}
+
+.go-left {
+    float: left;
+    margin-right: 1em;
+}
+
+.go-right {
+    float: right;
+    margin-left: 1em;
+}
+
+.border {
+    border: thin solid white;
+}
+
+.activePage {
+    background-color: #006994;
+}
