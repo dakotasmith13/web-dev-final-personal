@@ -207,6 +207,13 @@ main .details {
     color: white;
     font-size: 3rem;
 }
+
+.about-banner h1 {
+    padding: 3% 5% 8% 5%;
+    text-align: left;
+    color: white;
+    font-size: 3rem;
+}
 .rosa-parks-image {
     grid-area: section-one;
 }
