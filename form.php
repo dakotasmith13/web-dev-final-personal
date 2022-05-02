@@ -93,6 +93,27 @@
 
                             if ($statement->execute($params)) {
                                 print('<p>Record was successfully saved.</p>');
+                                // send email
+                                $to = $email;
+                                $from = 'Kat & Dak <khughes2@uvm.edu>';
+                                $subject = 'Kat\'s Miata Suggestion Box!';
+
+                                $mailMessage = '<p style="font-size: 14pt;">';
+                                $mailMessage .= "$firstName, ";
+                                $mailMessage .= "Thank you for your suggestion for Kat's 1990 Miata! ";
+                                $mailMessage .= '<table style ="border-color: #666; font-size: 14pt;">';
+                                $mailMessage .= '<tr><td><strong>Name:</strong></td><td>' . $firstName . '</td></tr>';
+                                $mailMessage .= '<tr><td><strong>Age:</strong></td><td>' . $age . '</td></tr>';
+                                $mailMessage .= '<tr><td><strong>email:</strong></td><td>' . $email . '</td></tr>';
+                                $mailMessage .= '<tr><td><strong>Are you a car enthusiast?:</strong></td><td>' . $carEnthusiast . '</td></tr>';
+                                $mailMessage .= '<tr><td><strong>Suggestion::</strong></td><td>' . $miataSuggestions . '</td></tr>';
+
+                                $headers = "MIME-Version: 1.0\r\n";
+                                $headers .= "Content-type: text/html; charset=utf-8\r\n";
+                                $headers .= "From: " . $from . "\r\n";
+
+                                $mailSent = mail($to, $subject, $mailMessage, $headers);
+
                             }
                             else {
                                 print('<p>Record was NOT successfully saved.</p>');
