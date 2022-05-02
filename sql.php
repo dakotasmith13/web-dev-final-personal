@@ -14,6 +14,11 @@
                     fldMiataSuggestions TEXT
                 )
             </pre>
+            <h2>Select Records</h2>
+            <pre>
+                SELECT fldFirstName, fldAge, fldEmail, fldCarEnthusiast, fldMiataSuggestions FROM tblMiataSuggestionsForm
+            </pre>
+            
             <h2>Insert Data</h2>
             <pre>
             INSERT INTO tblMiataSuggestionsForm
