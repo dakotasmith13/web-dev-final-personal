@@ -30,7 +30,10 @@
         <main>
             <section class="form-banner">
                 <h2>Have Any Suggestions?</h2>
-                <?php
+            </section>
+
+            <section class="actual-form">
+            <?php
                 if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     
                     // sanitize data
@@ -128,9 +131,6 @@
                     print('<h2>Thank you, your information has been received.</h2>');
                 }
                 ?>
-            </section>
-
-            <section class="actual-form">
                 <h2>Let us know if you have any suggesstions for my 1990 Miata!</h2>
                 <form action="#" id="frmMiataSuggestions" method="POST">
                     <fieldset class="contact">
