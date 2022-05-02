@@ -130,21 +130,15 @@
                     <fieldset class="radio">
                         <legend>Are you a car enthusiast?</legend>
                         <p>
-                            <input type="radio" id="radCarEnthusiastYes" name="radCarEnthusiast" value="Yes" required
-                            <?php 
-                                if ($carEnthusiast == "Yes") print 'checked'; ?>>
+                            <input type="radio" id="radCarEnthusiastYes" name="radCarEnthusiast" value="Yes" required <?php if ($carEnthusiast == "Yes") print 'checked'; ?>>
                             <label class="radio-field" for="radCarEnthusiastYes">Yes</label> 
                         </p> 
                         <p>
-                            <input type="radio" id="radCarEnthusiastSomewhat" name="radCarEnthusiast" value="Somewhat" required
-                            <?php 
-                                if ($carEnthusiast == "Somewhat") print 'checked'; ?>>
+                            <input type="radio" id="radCarEnthusiastSomewhat" name="radCarEnthusiast" value="Somewhat" required <?php if ($carEnthusiast == "Somewhat") print 'checked'; ?>>
                             <label class="radio-field" for="radCarEnthusiastSomewhat">Somewhat</label> 
                         </p> 
                         <p>
-                            <input type="radio" id="radCarEnthusiastNo" name="radCarEnthusiast" value="No" required 
-                            <?php 
-                                if ($carEnthusiast == "No") print 'checked'; ?>>
+                            <input type="radio" id="radCarEnthusiastNo" name="radCarEnthusiast" value="No" required <?php if ($carEnthusiast == "No") print 'checked'; ?>>
                             <label class="radio-field" for="radCarEnthusiastNo">No</label>
                         </p>
                     </fieldset>
