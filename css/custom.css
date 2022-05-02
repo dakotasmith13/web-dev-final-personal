@@ -27,6 +27,10 @@ footer {
     padding: 1%;
 }
 
+h2 {
+    padding-left: 0;
+}
+
 body {
     max-width: 100%;
     margin: 0 auto;
@@ -98,7 +102,7 @@ cite {
 
 figure {
     text-align: center;
-    width: 80%;
+    width: 100%;
     margin-top: 1em;
 }
 
@@ -111,20 +115,10 @@ img {
 }
 
 p {
-    text-indent: 3em;
     padding-bottom: 1em;
 }
 
-/* section {
-    overflow: auto;
-}
-*/
-
-ul li {
-    margin: 1em;
-}
-
-/* grid layout for index */
+/* grid layout for header*/
 header {
     display: grid;
     grid-template-areas: 
@@ -134,12 +128,17 @@ header {
 
 .logo-image {
     grid-area: logo;
-    vertical-align: middle;
+    text-align: center;
+}
+
+.logo-image img {
+    margin-top:1em;
 }
 
 .title {
     grid-area: header;
     color: white;
+    padding-top: 4%
 }
 
 .top-nav {
@@ -147,19 +146,21 @@ header {
     text-align: right;
 }
 
-main .home {
+/* grid layout for index */
+main.home {
     display: grid;
     grid-template-areas: 
-        "banner banner banner"
-        "page-heading page-heading page-heading"
-        "section-one section-two section-three" 
-        "section-four section-four section-four";
-    grid-template-columns: 15% 70% 15%;
+        "banner banner"
+        "page-heading page-heading"
+        "section-one section-two" 
+        "section-three section-four";
+    grid-template-columns: 50% 50%;
 }
 
 .home-banner {
     grid-area: banner;
     padding: 10% 0 20% 10%;
+    margin: 0 0 3% 0;
 }
 
 .home-banner h1, .home-banner h3 {
@@ -175,30 +176,66 @@ main .home {
     font-size: 2rem;
 }
 
-.inner-section {
-    grid-area: section-two;
-    padding: 5%;
-}
-
-main h1:first-child {
+.home-heading {
     grid-area: page-heading;
+    padding: 1% 10%;
+    font-size: 2rem;
 }
 
-main .details {
+.home p {
+    font-size: 1.15em;
+}
+
+.home-text-right {
+    grid-area: section-two;
+    padding: 1% 25% 3% 5%;
+}
+
+.home-image-left {
+    grid-area: section-one;
+    padding: 1% 5% 1% 25%;
+}
+
+.home-text-left {
+    grid-area: section-three;
+    padding: 1% 5% 1% 25%;
+}
+
+.home-image-right {
+    grid-area: section-four;
+    padding: 1% 25% 1% 5%;
+}
+
+.home-text-right-2 {
+    grid-area: section-six;
+    padding: 1% 25% 3% 5%;
+}
+
+.home-image-left-2 {
+    grid-area: section-five;
+    padding: 1% 5% 1% 25%;
+}
+/* grid layout for about */
+
+.details {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
+        "banner banner" 
         "page-heading page-heading"
         "section-one section-two"
         "section-three section-four"
-        "section-five section-six"
-        "section-seven section-eight";
-    grid-template-columns: auto auto;
-    row-gap: 1em;
+        "section-five section-six";
+    grid-template-columns: 50% 50%;
+}
+
+.details p {
+    font-size: 1.18em;
 }
 
 .about-banner {
-    grid-area: page-heading;
+    grid-area: banner;
     padding: 5% 5%;
+    margin: 0 0 3% 0;
 }
 
 .about-banner h2{
@@ -214,21 +251,7 @@ main .details {
     color: white;
     font-size: 3rem;
 }
-.rosa-parks-image {
-    grid-area: section-one;
-}
 
-.rosa-parks-text {
-    grid-area: section-two; 
-}
-
-.gandhi-image {
-    grid-area: section-four;
-}
-
-.gandhi-text {
-    grid-area: section-three;
-}
 
 /* form styling */
 
@@ -281,6 +304,7 @@ input {
 
 textarea {
     width: 100%;
+    padding: .5em;
 }
 
 select {   
@@ -312,6 +336,10 @@ input[type="submit"]:hover {
     background: rgb(148, 18, 18);
 }
 
+.mistake {
+    font-size: 1.25rem;
+    padding-top: 1%;
+}
 /* form grid layout */
 
 #form main {

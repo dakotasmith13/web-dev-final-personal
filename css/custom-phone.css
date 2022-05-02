@@ -1,0 +1,19 @@
+nav a {
+    display: block;
+    width: 100%;
+    color: #ffffff;
+}
+
+nav a:link {
+    background: rgba(255,255,255,0);
+    
+}
+
+.compliment-table {
+    font-size: .5rem;
+}
+
+.form h2 {
+    padding-top: 30%;
+    text-align: center;
+}

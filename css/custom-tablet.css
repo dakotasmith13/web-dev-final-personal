@@ -1,0 +1,93 @@
+/* header */
+header {
+    grid-template-areas: 
+    "logo"
+    "header" 
+    "nav";
+    grid-template-columns: 100%;
+}
+
+.title {
+    text-align: center;
+}
+
+.top-nav {
+    text-align: center;
+}
+
+/* index */
+
+main.home {
+    grid-template-areas: 
+        "banner"
+        "page-heading"
+        "section-one" 
+        "section-two" 
+        "section-three"
+        "section-four";
+    grid-template-columns: 100%;
+}
+
+.home-image-left {
+    padding: 5%;
+}
+.home-text-right {
+    padding: 5%;
+}
+
+.home-text-left {
+    grid-area: section-four;
+    padding: 5%;
+}
+
+.home-image-right {
+    grid-area: section-three;
+    padding: 5%;
+}
+
+.home-image-right-2 {
+    grid-area: section-five;
+    padding: 5%;
+}
+
+.home-text-left-2 {
+    grid-area: section-six;
+    padding: 5%;
+}
+/* details */
+.details {
+    grid-template-areas: 
+        "banner"
+        "page-heading"
+        "section-one"
+        "section-two"
+        "section-three" 
+        "section-four"
+        "section-five"
+        "section-six";
+    grid-template-columns: 100%;
+}
+
+figure {
+    margin: 1em auto;
+}
+
+/* form */
+.form main {
+    grid-template-columns: auto;
+}
+
+.form main:first-child {
+    grid-column: 1;
+}
+
+.form .actual-form {
+    grid-column: 1;
+    max-width: 100%;
+    margin: 5% auto;
+}
+
+.form h2 {
+    padding-top: 20%;
+    text-align: center;
+}
