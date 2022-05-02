@@ -1,12 +1,13 @@
 <header>
     <section class="logo-image">
-        <img src="../final/images/logo.png">
+        <h1 hidden>Logo</h1>
+        <a href="../final/index.php"><img src="../final/images/logo.png" alt="logo"></a>
     </section>
     <section class="title">
         <h1>Project: Miata</h1>
-        <h2>Kat Hughes & Dakota Smith</h2>
     </section>
     <section class="top-nav">
+        <h2 hidden>Top</h2>
         <?php
         include 'nav.php';
         ?>
