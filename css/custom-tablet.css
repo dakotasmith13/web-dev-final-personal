@@ -73,21 +73,22 @@ figure {
 }
 
 /* form */
-.form main {
-    grid-template-columns: auto;
+#form main {
+    grid-template-areas:
+    "header"
+    "form";
+    grid-template-columns: 100%;
 }
 
-.form main:first-child {
+#form main:first-child {
     grid-column: 1;
 }
 
-.form .actual-form {
+#form .actual-form {
     grid-column: 1;
-    max-width: 100%;
     margin: 5% auto;
 }
 
-.form h2 {
+#form h2 {
     padding-top: 20%;
-    text-align: center;
 }
