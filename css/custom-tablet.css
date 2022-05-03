@@ -17,7 +17,7 @@ header {
 
 /* index */
 
-main.home {
+.home {
     grid-template-areas: 
         "banner"
         "page-heading"
@@ -53,6 +53,17 @@ main.home {
 .home-text-right-2 {
     grid-area: section-six;
     padding: 5%;
+}
+
+.mazda-images {
+    display: grid;
+    grid-template-areas: 
+    "title title"
+    "image-one image-two"
+    "image-three image-four"
+    "image-five image-six";
+    grid-template-columns: auto auto;
+    padding: 0 0 5% 0;
 }
 
 /* details */

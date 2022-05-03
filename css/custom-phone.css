@@ -6,3 +6,17 @@ nav a {
 .form h2 {
     padding-top: 30%;
 }
+
+.mazda-images {
+    display: grid;
+    grid-template-areas: 
+    "title"
+    "image-one"
+    "image-two"
+    "image-three"
+    "image-four"
+    "image-five"
+    "image-six";
+    grid-template-columns: auto;
+    padding: 0 0 5% 0;
+}

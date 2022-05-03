@@ -147,7 +147,7 @@ header {
 }
 
 /* grid layout for index */
-main.home {
+.home {
     display: grid;
     grid-template-areas: 
         "banner banner"
@@ -155,6 +155,7 @@ main.home {
         "section-one section-two" 
         "section-three section-four";
     grid-template-columns: 50% 50%;
+    padding: 0;
 }
 
 .home-banner {
@@ -163,12 +164,12 @@ main.home {
     margin: 0 0 3% 0;
 }
 
-.home-banner h1, .home-banner h3 {
+.home-banner h2, .home-banner h3 {
     color: #ffffff;
     text-align: left;
 }
 
-.home-banner h1 {
+.home-banner h2 {
     font-size: 4rem;
 }
 
@@ -215,6 +216,53 @@ main.home {
     grid-area: section-five;
     padding: 1% 5% 1% 25%;
 }
+
+.mazda-images {
+    display: grid;
+    grid-template-areas: 
+    "title title title"
+    "image-one image-two image-three"
+    "image-four image-five image-six";
+    grid-template-columns: auto auto auto;
+    padding: 0 0 5% 0;
+}
+
+.mazda-images h2 {
+    grid-area: title;
+    padding: 1% 0 2% 5%;
+    font-size: 2.5rem; 
+}
+
+.mazda-images .mazda-6 {
+    grid-area: image-one;
+    display: block;
+}
+
+.mazda-images .mazda-3 {
+    grid-area: image-two;
+    display: block;
+}
+
+.mazda-images .mx-5 {
+    grid-area: image-three;
+    display: block;
+}
+
+.mazda-images .cx-30 {
+    grid-area: image-four;
+    display: block;
+}
+
+.mazda-images .cx-9 {
+    grid-area: image-five;
+    display: block;
+}
+
+.mazda-images .cx-50 {
+    grid-area: image-six;
+    display: block;
+}
+
 
 /* grid layout for about */
 
