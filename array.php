@@ -40,6 +40,7 @@
                 </p>
             </section>  
             <section class="table-right">
+                <h2 hidden>Table</h2>
                 <table>
                     <tr>
                         <th>Mileage</th>
