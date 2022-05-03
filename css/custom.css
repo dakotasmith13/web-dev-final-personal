@@ -146,6 +146,7 @@ header {
     text-align: right;
 }
 
+
 /* grid layout for index */
 .home {
     display: grid;
@@ -160,17 +161,31 @@ header {
 
 .home-banner {
     grid-area: banner;
-    padding: 10% 0 20% 10%;
+    padding: 10% 0 15% 10%;
     margin: 0 0 3% 0;
 }
 
 .home-banner h2, .home-banner h3 {
     color: #ffffff;
-    text-align: left;
+    text-align: left; 
+    animation: 1.5s slide-right; 
 }
 
+@keyframes slide-right {
+    from {
+      margin-left: -100%;
+      width: 300%; 
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+
 .home-banner h2 {
-    font-size: 4rem;
+    font-size: 5rem; 
 }
 
 .home-banner h3 {
@@ -263,6 +278,12 @@ header {
     display: block;
 }
 
+.mazda-6:hover, .mazda-3:hover, .mx-5:hover,
+.cx-30:hover, .cx-9:hover, .cx-50:hover {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
 
 /* grid layout for about */
 
@@ -490,16 +511,6 @@ caption {
 .main {
     width:90%;
     max-width: 1em;
-}
-
-.go-left {
-    float: left;
-    margin-right: 1em;
-}
-
-.go-right {
-    float: right;
-    margin-left: 1em;
 }
 
 .activePage {

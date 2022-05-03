@@ -7,6 +7,13 @@ nav a {
     padding-top: 30%;
 }
 
+.home-banner h2, .home-banner h3 {
+    animation: none;
+}
+
+.home-banner h2 {
+    font-size: 4rem;
+}
 .mazda-images {
     display: grid;
     grid-template-areas: 
