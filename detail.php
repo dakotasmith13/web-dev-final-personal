@@ -8,6 +8,12 @@
             <section class="home-heading">
                 <h2>MEET KAT</h2>
             </section>
+            <section class="home-image-left">
+                <h2 hidden>Photo</h2>
+                <figure>
+                    <img alt="Kat in Mini Cooper" src="images/kat_mini.jpg">
+                </figure>
+            </section>
             <section class="home-text-right">
                 <h2>HOW IT STARTED</h2>
                 <p>Hey everyone, my name is Kat, I am a bit of a car enthusiast, and I just bought my first 
@@ -33,9 +39,7 @@
             <section class="home-image-right">
                 <h2 hidden>Photo</h2>
                 <figure>
-                    <img alt="2022 Miata" src="images/modern_miata.jpg">
-                    <figcaption><cite><a href="https://www.carscoops.com/2022/02/2022-mazda-mx-5-miata-configurator-is-live-show-us-your-build/" 
-                    target="_blank">Source</a></cite></figcaption>
+                    <img alt="Kat In Miata" src="images/buying_miata.JPG">
                 </figure>
             </section>
             <section class="home-text-left"> 
