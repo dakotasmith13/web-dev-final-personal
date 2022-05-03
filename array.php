@@ -1,14 +1,5 @@
     <?php
     include 'top.php';
-
-    $kindestActors = array(
-        array('Oprah Winfrey', '01/29/54', 'Oprah Winfrey Show'),
-        array('Jennifer Lawrence', '08/15/90', 'The Hunger Games'),
-        array('Tom Hanks', '07/9/56', 'Forrest Gump'),
-        array('Taylor Swift', '12/13/89', 'Many grammy nominated albums'),
-        array('Keanu Reeves', '9/2/64', 'The Matrix')
-    );
-
     ?>
         <main class="details">
             <section class="about-banner">
@@ -64,21 +55,26 @@
                 </p>
             </section>
             <section>
-                <h3>Top <?php print count($kindestActors); ?> Kindest Actors</h3>
                 <table>
                     <tr>
-                        <th>Name</th>
-                        <th>Birthday</th>
-                        <th>Known for</th>
+                        <th>Mileage</th>
+                        <th>Date</th>
+                        <th>Maintenance performed</th>
                     </tr>
                     <?php
-                    foreach ($kindestActors as $kindestActor) {
-                        print '<tr>';
-                        print '<td>' .  $kindestActor[0] . '</td>';
-                        print '<td>' .  $kindestActor[1] . '</td>';
-                        print '<td>' .  $kindestActor[2] . '</td>';
-                        print '</tr>' . PHP_EOL;
-                    }
+                        $sql = 'SELECT fldMileage, fldDate, fldMaintenancePerformed FROM tblMaintenanceRecords';
+                        $statement = $pdo->prepare($sql);
+                        $statement->execute();
+
+                        $records = $statement->fetchAll();
+
+                        foreach($records as $record) {
+                            print '<tr>';
+                            print '<td>' . $record['fldMileage'] . '</td>';
+                            print '<td>' . $record['fldDate'] . '</td>';
+                            print '<td>' . $record['fldMaintenancePerformed'] . '</td>';
+                            print '</tr>' . PHP_EOL;
+                        }
                     ?>
                 </table>
             </section>
