@@ -35,27 +35,28 @@ main.home {
     padding: 5%;
 }
 
-.home-text-left {
+.home-text-left, .above-table {
     grid-area: section-four;
     padding: 5%;
 }
 
-.home-image-right {
+.home-image-right, .table-right {
     grid-area: section-three;
     padding: 5%;
 }
 
-.home-image-right-2 {
+.home-image-left-2 {
     grid-area: section-five;
     padding: 5%;
 }
 
-.home-text-left-2 {
+.home-text-right-2 {
     grid-area: section-six;
     padding: 5%;
 }
+
 /* details */
-.details {
+.details, .array {
     grid-template-areas: 
         "banner"
         "page-heading"
