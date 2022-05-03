@@ -1,14 +1,19 @@
     <?php
     include 'top.php';
     ?>
-        <main class="details">
-            <section class="about-banner">
+        <main class="array">
+            <section class="array-banner">
                 <h1>MIATA BUILD</h1>
             </section>
             <section class="home-heading">
-                <h2>SPECS</h2>
+                <h2>MAINTENANCE</h2>
             </section>
-            
+            <section class="home-image-left">
+                <h2 hidden>Photo</h2>
+                <figure>
+                    <img alt="Miata Wheels" src="images/miata_wheels.JPG">
+                </figure>
+            </section>
             <section class="home-text-right">
                 <h2>RECENT UPDATES</h2>
                 <p>I bought the Miata with about 214,100 miles on the odometer, and while the paint and exterior
@@ -21,15 +26,8 @@
                     Other basic maintenances were performed to ensure the car was in good shape.
                 </p>
             </section>
-            <section class="home-image-right">
-                <h2 hidden>Photo</h2>
-                <figure>
-                    <img alt="2022 Miata" src="images/modern_miata.jpg">
-                    <figcaption><cite><a href="https://www.carscoops.com/2022/02/2022-mazda-mx-5-miata-configurator-is-live-show-us-your-build/" 
-                    target="_blank">Source</a></cite></figcaption>
-                </figure>
-            </section>
-            <section class="home-text-left"> 
+
+            <section class="above-table"> 
                 <h2>SERVICE RECORDS</h2>
                 <p>The previous owners were extremely meticulous with keeping records for everything that was
                     done to the Miata, they even kept the receipts for minor things like windshield wipers. Keeping
@@ -37,24 +35,11 @@
                     past. It allowed me to determine how the vehicle has been treated in the past and will help me
                     determine what parts are due to replaced soon, and what parts have been recently replaced or
                     serviced. To continue the detailed service records kept by all the previous owners, I will also be
-                    keeping detailed records of what maintenance I perform and what parts I install. Below is the
+                    keeping detailed records of what maintenance I perform and what parts I install. Here are the
                     current service records for the Miata since I bought it on 4/24/22.
                 </p>
-            </section>   
-            <section class="home-text-right-2">
-                <h2>FUTURE UPDATES</h2>
-                <p>There is a lot I plan on doing with the Miata in the future. There is a minor oil leak in both the
-                    rear main seal and the valve cover gasket. Both of those will be replaced in the future, I already
-                    have the part for the valve cover gasket, and I have a new clutch I can put in when I do the rear
-                    main seal as well. The new clutch has a lightened flywheel for quicker revs and better
-                    performance. On top of that, I have a Hard Dog M2 Double Diagonal roll bar that needs to be
-                    installed. The Miata could use some brighter headlights as well as some paint restoration.
-                    Other than that, I have a lot of ideas about what could be done with the Miata, I just haven’t
-                    put a plan together about exactly what I plan on doing. If you have any ideas or suggestions
-                    about what I should do with the Miata, please fill out the form on the suggestions page!
-                </p>
-            </section>
-            <section>
+            </section>  
+            <section class="table-right">
                 <table>
                     <tr>
                         <th>Mileage</th>
@@ -78,7 +63,26 @@
                     ?>
                 </table>
             </section>
-
+            <section class="home-image-left-2">
+                <h2 hidden>Photo</h2>
+                <figure>
+                    <img alt="Kat in her Miata" src="images/kat_miata.JPG">
+                </figure>
+            </section>            
+            <section class="home-text-right-2">
+                <h2>FUTURE UPDATES</h2>
+                <p>There is a lot I plan on doing with the Miata in the future. There is a minor oil leak in both the
+                    rear main seal and the valve cover gasket. Both of those will be replaced in the future, I already
+                    have the part for the valve cover gasket, and I have a new clutch I can put in when I do the rear
+                    main seal as well. The new clutch has a lightened flywheel for quicker revs and better
+                    performance. On top of that, I have a Hard Dog M2 Double Diagonal roll bar that needs to be
+                    installed. The Miata could use some brighter headlights as well as some paint restoration.
+                    Other than that, I have a lot of ideas about what could be done with the Miata, I just haven’t
+                    put a plan together about exactly what I plan on doing. If you have any ideas or suggestions
+                    about what I should do with the Miata, please fill out the form on the suggestions page!
+                </p>
+            </section>
+            
         </main>
     <?php
     include 'footer.php';
